@@ -14,6 +14,11 @@
 	<head>
 		<title>Calendari mguerra</title>
 		<meta charset="utf-8">
+			<style>
+		#calendar .hoy {
+			background-color:red;
+		}
+	</style>
 	</head>
 	<body>
 		<div>
@@ -24,7 +29,7 @@
 				<th>Dilluns</th><th>Dimarts</th><th>Dimecres</th><th>Dijous</th>
 				<th>Divendres</th><th>Dissabte</th><th>Diumenge</th>
 			</tr>
-			<tr bgcolor="silver">
+			<tr>
 				<?php
 					$last_cell=$diaSemana+$ultimDiaMes;
 					// fem un bucle fins 42, que es el maxim de cel·les que hi pot haber... 6 columnes de 7 dies
